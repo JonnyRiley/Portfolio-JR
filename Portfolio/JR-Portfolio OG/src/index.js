@@ -31,28 +31,30 @@ import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 // others
+import Skills from "views/examples/Skill-page.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={props => <Index {...props} />} />
+      <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
         path="/nucleo-icons"
-        render={props => <NucleoIcons {...props} />}
+        render={(props) => <NucleoIcons {...props} />}
       />
       <Route
         path="/landing-page"
-        render={props => <LandingPage {...props} />}
+        render={(props) => <LandingPage {...props} />}
       />
       <Route
         path="/profile-page"
-        render={props => <ProfilePage {...props} />}
+        render={(props) => <ProfilePage {...props} />}
       />
       <Route
         path="/register-page"
-        render={props => <RegisterPage {...props} />}
+        render={(props) => <RegisterPage {...props} />}
       />
-      <Redirect to="/index" />
+      <Route path="/skills" render={(props) => <Skills {...props} />} />
+      <Redirect to="/landing-page" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

@@ -19,6 +19,7 @@
 import React from "react";
 // nodejs library that concatenates strings
 import classnames from "classnames";
+import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Collapse,
@@ -49,7 +50,7 @@ function IndexNavbar() {
         document.documentElement.scrollTop > 299 ||
         document.body.scrollTop > 299
       ) {
-        setNavbarColor("");
+        setNavbarColor("bg-dark");
       } else if (
         document.documentElement.scrollTop < 300 ||
         document.body.scrollTop < 300
@@ -70,7 +71,7 @@ function IndexNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="/index"
+            href="/landing-page"
             target="_blank"
             title="Coded by Creative Tim"
           >
@@ -115,21 +116,24 @@ function IndexNavbar() {
                 aria-labelledby="dropdownMenuButton"
                 className="dropdown-info"
               >
-                <DropdownItem header tag="span">
-                  Dropdown header
+                <DropdownItem header tag="span" class="align-center">
+                  Menu
+                </DropdownItem>
+                <DropdownItem
+                  href="#profile-page"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <Link to="/landing-page">Home</Link>
                 </DropdownItem>
                 <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Action
+                  <Link to="/profile-page">Profile</Link>
                 </DropdownItem>
                 <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Another action
-                </DropdownItem>
-                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Something else here
+                  <Link to="/register-page">Register</Link>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Separated link
+                  <Link to="/skills">Skills</Link>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
@@ -181,14 +185,6 @@ function IndexNavbar() {
                 <i className="fa fa-github" />
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
-            </NavItem>
-            <NavItem>
-              {/* <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
-                target="_blank"
-              >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
-              </NavLink> */}
             </NavItem>
           </Nav>
         </Collapse>

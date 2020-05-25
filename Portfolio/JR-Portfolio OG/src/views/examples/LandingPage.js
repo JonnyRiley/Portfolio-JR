@@ -32,7 +32,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 
@@ -46,7 +46,7 @@ function LandingPage() {
   });
   return (
     <>
-      <ExamplesNavbar />
+      <IndexNavbar />
       <LandingPageHeader />
       <div className="main">
         <div className="section text-center">
@@ -232,6 +232,17 @@ function LandingPage() {
                     <p>The milkroom Web App</p>
                   </div>
                 </Col>
+                <Col>
+                  <div className="img-details">
+                    <Button
+                      className="btn-round ml-1"
+                      color="info"
+                      type="button"
+                    >
+                      MORE PROJECTS
+                    </Button>
+                  </div>
+                </Col>
               </Row>
             </Container>
             <br />
@@ -244,6 +255,7 @@ function LandingPage() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Travel</h4>
+
                     <p className="description">
                       Exploring the world encourages me to work harder and
                       occasionally put my laptop down.
@@ -261,6 +273,7 @@ function LandingPage() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Business Projects</h4>
+                    <br></br>
                     <p>
                       Projects that I am either currently or previously been
                       involved in.
@@ -278,6 +291,7 @@ function LandingPage() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Skills</h4>
+                    <br></br>
                     <p>
                       Tech languages and frameworks that I have implemented so
                       far
@@ -295,6 +309,7 @@ function LandingPage() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">About</h4>
+                    <br></br>
                     <p>My hobbies and interests outside the world of coding</p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -467,7 +482,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div> */}
-        <div className="section section-dark ">
+        <div className="section bg-dark ">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
