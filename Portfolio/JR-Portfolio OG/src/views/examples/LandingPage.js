@@ -21,10 +21,6 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardTitle,
   Form,
   Input,
   InputGroupAddon,
@@ -32,7 +28,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -57,25 +53,187 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
+                <h2 className="title">About</h2>
                 <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                  An adaptable and responsible Business graduate that has
+                  recently completed an industry-led coding Bootcamp,
+                  NorthCoders. I have a clear, logical mind with a practical
+                  approach to problem solving and a drive to see things through
+                  to completion. Coding has enabled me to further my curiosity
+                  into problem solving and how the world of tech works.
                 </h5>
                 <br />
                 <Button
                   className="btn-round"
                   color="info"
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   See Details
                 </Button>
               </Col>
             </Row>
+            <Container>
+              {/*  <div class="d-flex justify-content-center">
+                <Row>
+                  <Col md="17">
+                    <div className="title">
+                      <h3>Software Skills</h3>
+                      <br />
+                    </div>
+                    <p>
+                      {" "}
+                      Javascript
+                      <Progress
+                        max="100"
+                        value="90"
+                        barClassName="progress-bar-success"
+                      />
+                    </p>
+                    <p>
+                      React
+                      <Progress
+                        max="100"
+                        value="85"
+                        barClassName="progress-bar-success"
+                      />
+                    </p>
+                    <p>
+                      {" "}
+                      HTML5
+                      <Progress
+                        max="100"
+                        value="85"
+                        barClassName="progress-bar-success"
+                      />
+                    </p>
+                    <p>
+                      {" "}
+                      CSS
+                      <Progress
+                        max="100"
+                        value="85"
+                        barClassName="progress-bar-success"
+                      />
+                    </p>
+                    <p>
+                      {" "}
+                      Bootstrap
+                      <Progress
+                        max="100"
+                        value="78"
+                        barClassName="progress-bar-success"
+                      />
+                    </p>
+                    <p>
+                      {" "}
+                      NodeJs
+                      <Progress
+                        max="100"
+                        value="78"
+                        barClassName="progress-bar-success"
+                      />
+                    </p>
+                    <p>
+                      {" "}
+                      Express.js
+                      <Progress
+                        max="100"
+                        value="70"
+                        barClassName="progress-bar-warning"
+                      />
+                    </p>{" "}
+                    <p>
+                      {" "}
+                      PostgreSQL
+                      <Progress
+                        max="100"
+                        value="70"
+                        barClassName="progress-bar-warning"
+                      />
+                    </p>
+                    <p>
+                      {" "}
+                      Flutter
+                      <Progress
+                        max="100"
+                        value="70"
+                        barClassName="progress-bar-warning"
+                      />
+                    </p>
+                    <p>
+                      {" "}
+                      Dart
+                      <Progress
+                        max="100"
+                        value="70"
+                        barClassName="progress-bar-warning"
+                      />
+                    </p>
+                    <br />
+                  </Col>
+                </Row>
+              </div> */}
+              <div className="title">
+                <h2>Projects</h2>
+              </div>
+              <Row>
+                <Col md="4" sm="7">
+                  <h4 className="images-title">Front-End</h4>
+                  <img
+                    alt="..."
+                    className="img-rounded img-responsive"
+                    src={require("assets/img/faces/milkroom.png")}
+                  />
+                  <div className="img-details">
+                    <div className="author">
+                      <img
+                        alt="..."
+                        className="img-circle img-no-padding img-responsive"
+                        src={require("assets/img/faces/milkroom-logo.jpg")}
+                      />
+                    </div>
+                    <p>React Web App</p>
+                  </div>
+                </Col>
+                <Col md="4" sm="7">
+                  <h4 className="images-title">Back-End</h4>
+                  <img
+                    alt="..."
+                    className="img-rounded img-responsive"
+                    src={require("assets/img/faces/milkroom.png")}
+                  />
+                  <div className="img-details">
+                    <div className="author">
+                      <img
+                        alt="..."
+                        className="img-circle img-no-padding img-responsive"
+                        src={require("assets/img/faces/milkroom-logo.jpg")}
+                      />
+                    </div>
+                    <p>RESTful API</p>
+                  </div>
+                </Col>{" "}
+                <Col md="4" sm="7">
+                  <h4 className="images-title">Rounded Image</h4>
+                  <img
+                    alt="..."
+                    className="img-rounded img-responsive"
+                    src={require("assets/img/faces/milkroom.png")}
+                  />
+                  <div className="img-details">
+                    <div className="author">
+                      <img
+                        alt="..."
+                        className="img-circle img-no-padding img-responsive"
+                        src={require("assets/img/faces/milkroom-logo.jpg")}
+                      />
+                    </div>
+                    <p>The milkroom Web App</p>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
             <br />
             <br />
             <Row>
@@ -85,10 +243,10 @@ function LandingPage() {
                     <i className="nc-icon nc-album-2" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
+                    <h4 className="info-title">Travel</h4>
                     <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
+                      Exploring the world encourages me to work harder and
+                      occasionally put my laptop down.
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -102,10 +260,10 @@ function LandingPage() {
                     <i className="nc-icon nc-bulb-63" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
+                    <h4 className="info-title">Business Projects</h4>
                     <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                      Projects that I am either currently or previously been
+                      involved in.
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -119,10 +277,10 @@ function LandingPage() {
                     <i className="nc-icon nc-chart-bar-32" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Statistics</h4>
+                    <h4 className="info-title">Skills</h4>
                     <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
+                      Tech languages and frameworks that I have implemented so
+                      far
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
@@ -136,11 +294,8 @@ function LandingPage() {
                     <i className="nc-icon nc-sun-fog-29" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
-                    <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
-                    </p>
+                    <h4 className="info-title">About</h4>
+                    <p>My hobbies and interests outside the world of coding</p>
                     <Button className="btn-link" color="info" href="#pablo">
                       See more
                     </Button>
@@ -150,14 +305,14 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
+        {/* <div className="section section-dark text-center">
           <Container>
             <h2 className="title">Let's talk about us</h2>
             <Row>
               <Col md="4">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
@@ -165,7 +320,7 @@ function LandingPage() {
                     </a>
                   </div>
                   <CardBody>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
                         <CardTitle tag="h4">Henry Ford</CardTitle>
                         <h6 className="card-category">Product Manager</h6>
@@ -182,7 +337,7 @@ function LandingPage() {
                       className="btn-just-icon btn-neutral"
                       color="link"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -190,7 +345,7 @@ function LandingPage() {
                       className="btn-just-icon btn-neutral ml-1"
                       color="link"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-google-plus" />
                     </Button>
@@ -198,7 +353,7 @@ function LandingPage() {
                       className="btn-just-icon btn-neutral ml-1"
                       color="link"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -208,7 +363,7 @@ function LandingPage() {
               <Col md="4">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         src={require("assets/img/faces/joe-gardner-2.jpg")}
@@ -216,7 +371,7 @@ function LandingPage() {
                     </a>
                   </div>
                   <CardBody>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
                         <CardTitle tag="h4">Sophie West</CardTitle>
                         <h6 className="card-category">Designer</h6>
@@ -234,7 +389,7 @@ function LandingPage() {
                       className="btn-just-icon btn-neutral"
                       color="link"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -242,7 +397,7 @@ function LandingPage() {
                       className="btn-just-icon btn-neutral ml-1"
                       color="link"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-google-plus" />
                     </Button>
@@ -250,7 +405,7 @@ function LandingPage() {
                       className="btn-just-icon btn-neutral ml-1"
                       color="link"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -260,7 +415,7 @@ function LandingPage() {
               <Col md="4">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         src={require("assets/img/faces/erik-lucatero-2.jpg")}
@@ -268,7 +423,7 @@ function LandingPage() {
                     </a>
                   </div>
                   <CardBody>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
                         <CardTitle tag="h4">Robert Orben</CardTitle>
                         <h6 className="card-category">Developer</h6>
@@ -286,7 +441,7 @@ function LandingPage() {
                       className="btn-just-icon btn-neutral"
                       color="link"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-twitter" />
                     </Button>
@@ -294,7 +449,7 @@ function LandingPage() {
                       className="btn-just-icon btn-neutral ml-1"
                       color="link"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-google-plus" />
                     </Button>
@@ -302,7 +457,7 @@ function LandingPage() {
                       className="btn-just-icon btn-neutral ml-1"
                       color="link"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -311,8 +466,8 @@ function LandingPage() {
               </Col>
             </Row>
           </Container>
-        </div>
-        <div className="section landing-section">
+        </div> */}
+        <div className="section section-dark ">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">

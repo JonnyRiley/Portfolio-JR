@@ -205,7 +205,7 @@ function SectionButtons() {
               </div>
             </Col>{" "}
             <Col md="4" sm="7">
-              <h4 className="images-title">Rounded Image</h4>
+              <h4 className="images-title">The milkroom</h4>
               <img
                 alt="..."
                 className="img-rounded img-responsive"
@@ -219,7 +219,7 @@ function SectionButtons() {
                     src={require("assets/img/faces/milkroom-logo.jpg")}
                   />
                 </div>
-                <p>The milkroom Web App</p>
+                <p>RESTful API</p>
               </div>
             </Col>
           </Row>
