@@ -116,28 +116,19 @@ function IndexNavbar() {
                 aria-labelledby="dropdownMenuButton"
                 className="dropdown-info"
               >
-                <DropdownItem header tag="span" class="align-center">
-                  Menu
-                </DropdownItem>
                 <DropdownItem
                   href="#profile-page"
                   onClick={(e) => e.preventDefault()}
                 >
                   <Link to="/landing-page">Home</Link>
                 </DropdownItem>
+                <DropdownItem divider />
                 <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <Link to="/profile-page">Profile</Link>
-                </DropdownItem>
-                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <Link to="/register-page">Register</Link>
+                  <Link to="/about">About</Link>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <Link to="/skills">Skills</Link>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Another separated link
+                  <Link to="/projects">Projects</Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>

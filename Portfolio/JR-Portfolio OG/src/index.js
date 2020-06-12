@@ -28,10 +28,12 @@ import "assets/demo/demo.css";
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
 import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
+import Projects from "views/examples/Projects-page.js";
+import MilkroomPage from "./views/examples/MilkroomPage.js";
+import NorthcodersPage from "./views/examples/Northcoders-page.js";
+import ReChargePage from "./views/examples/ReCharge-page.js";
 // others
-import Skills from "views/examples/Skill-page.js";
+import About from "views/examples/About-page.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -45,15 +47,14 @@ ReactDOM.render(
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}
       />
+      <Route path="/milkroom" render={(props) => <MilkroomPage {...props} />} />
+      <Route path="/reCharge" render={(props) => <ReChargePage {...props} />} />
       <Route
-        path="/profile-page"
-        render={(props) => <ProfilePage {...props} />}
+        path="/northcoders"
+        render={(props) => <NorthcodersPage {...props} />}
       />
-      <Route
-        path="/register-page"
-        render={(props) => <RegisterPage {...props} />}
-      />
-      <Route path="/skills" render={(props) => <Skills {...props} />} />
+      <Route path="/projects" render={(props) => <Projects {...props} />} />
+      <Route path="/about" render={(props) => <About {...props} />} />
       <Redirect to="/landing-page" />
     </Switch>
   </BrowserRouter>,

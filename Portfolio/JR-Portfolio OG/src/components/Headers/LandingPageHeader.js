@@ -45,8 +45,7 @@ function LandingPageHeader() {
       <div
         className="page-header section-dark"
         style={{
-          backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")",
+          backgroundImage: "url(" + require("assets/img/Header2.jpg") + ")",
         }}
       >
         <div className="filter" />
@@ -54,13 +53,14 @@ function LandingPageHeader() {
           <Container>
             <div className="title-brand">
               <h1 className="presentation-title">Jonathon James Riley</h1>
-              <div className="fog-low">
+              {/* <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
-              <div className="fog-low right">
+              </div> */}
+              {/* <div className="fog-low right">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
+              </div> */}
             </div>
+
             <h3 className="presentation-subtitle text-center">
               Junior Software Developer
             </h3>

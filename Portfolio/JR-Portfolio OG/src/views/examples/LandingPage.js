@@ -53,7 +53,7 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">About</h2>
+                {/* <h2 className="title">About</h2> */}
                 <h5 className="description">
                   An adaptable and responsible Business graduate that has
                   recently completed an industry-led coding Bootcamp,
