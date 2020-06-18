@@ -17,6 +17,7 @@
 
 */
 import React from "react";
+import { Link } from "react-router-dom";
 
 // reactstrap components
 import {
@@ -29,6 +30,7 @@ import {
   Container,
   Row,
   Col,
+  NavLink,
 } from "reactstrap";
 
 // core components
@@ -174,80 +176,58 @@ function LandingPage() {
                   </Col>
                 </Row>
               </div> */}
-              <div className="title">
+              <div className="nav-tabs-navigation">
                 <h2>Projects</h2>
               </div>
               <Row>
                 <Col md="4" sm="7">
-                  <h4 className="images-title">Front-End</h4>
-                  <img
-                    alt="..."
-                    className="img-rounded img-responsive"
-                    src={require("assets/img/faces/milkroom.png")}
-                  />
-                  <div className="img-details">
-                    <div className="author">
-                      <img
-                        alt="..."
-                        className="img-circle img-no-padding img-responsive"
-                        src={require("assets/img/faces/milkroom-logo.jpg")}
-                      />
+                  <h4 className="images-title">Front-End/Back-End</h4>
+                  <NavLink to="/milkroom" tag={Link}>
+                    <img
+                      alt="..."
+                      className="img-rounded img-responsive"
+                      src={require("assets/img/faces/milkroom.png")}
+                    />{" "}
+                    <br></br> <br></br>
+                    <div className="img-details">
+                      <p>React Web App</p>
                     </div>
-                    <p>React Web App</p>
-                  </div>
+                  </NavLink>
                 </Col>
                 <Col md="4" sm="7">
-                  <h4 className="images-title">Back-End</h4>
-                  <img
-                    alt="..."
-                    className="img-rounded img-responsive"
-                    src={require("assets/img/faces/milkroom.png")}
-                  />
-                  <div className="img-details">
-                    <div className="author">
-                      <img
-                        alt="..."
-                        className="img-circle img-no-padding img-responsive"
-                        src={require("assets/img/faces/milkroom-logo.jpg")}
-                      />
+                  <h4 className="images-title">Front-End/Back-End</h4>
+                  <NavLink to="/northcoders" tag={Link}>
+                    <img
+                      alt="..."
+                      className="img-rounded img-responsive"
+                      src={require("assets/ncNews-thumbnail.png")}
+                    />
+                    <br></br> <br></br>
+                    <div className="img-details">
+                      <p>React Web App</p>
                     </div>
-                    <p>RESTful API</p>
-                  </div>
+                  </NavLink>
                 </Col>{" "}
                 <Col md="4" sm="7">
-                  <h4 className="images-title">Rounded Image</h4>
-                  <img
-                    alt="..."
-                    className="img-rounded img-responsive"
-                    src={require("assets/img/faces/milkroom.png")}
-                  />
-                  <div className="img-details">
-                    <div className="author">
-                      <img
-                        alt="..."
-                        className="img-circle img-no-padding img-responsive"
-                        src={require("assets/img/faces/milkroom-logo.jpg")}
-                      />
+                  <h4 className="images-title">Front-end</h4>
+                  <NavLink to="/reCharge" tag={Link}>
+                    {" "}
+                    <img
+                      alt="..."
+                      className="img-rounded img-responsive"
+                      src={require("assets/reChargeThumbnail.png")}
+                    />
+                    <br></br> <br></br>
+                    <div className="img-details">
+                      <p>Flutter App</p>
                     </div>
-                    <p>The milkroom Web App</p>
-                  </div>
-                </Col>
-                <Col>
-                  <div className="img-details">
-                    <Button
-                      className="btn-round ml-1"
-                      color="info"
-                      type="button"
-                    >
-                      MORE PROJECTS
-                    </Button>
-                  </div>
+                  </NavLink>
                 </Col>
               </Row>
             </Container>
             <br />
             <br />
-            <Row>
+            {/* <Row>
               <Col md="3">
                 <div className="info">
                   <div className="icon icon-info">
@@ -317,7 +297,7 @@ function LandingPage() {
                   </div>
                 </div>
               </Col>
-            </Row>
+            </Row> */}
           </Container>
         </div>
         {/* <div className="section section-dark text-center">
@@ -486,11 +466,13 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Keep in touch?</h2>
+                <div className="text-center">
+                  <h2 className="text-light">Keep in touch?</h2>
+                </div>
                 <Form className="contact-form">
                   <Row>
                     <Col md="6">
-                      <label>Name</label>
+                      <label className="text-light">Name</label>
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -501,7 +483,7 @@ function LandingPage() {
                       </InputGroup>
                     </Col>
                     <Col md="6">
-                      <label>Email</label>
+                      <label className="text-light">Email</label>
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -512,7 +494,7 @@ function LandingPage() {
                       </InputGroup>
                     </Col>
                   </Row>
-                  <label>Message</label>
+                  <label className="text-light">Message</label>
                   <Input
                     placeholder="Tell us your thoughts and feelings..."
                     type="textarea"

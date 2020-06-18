@@ -1,12 +1,15 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Progress, Container, Row, Col } from "reactstrap";
+import { Progress, Container, Row, Col } from "reactstrap";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
+import { Link } from "react-router-dom";
+import { NavLink } from "reactstrap";
+import SectionCarousel from "views/index-sections/SectionCarousel.js";
 
 function About() {
   document.documentElement.classList.remove("nav-open");
@@ -21,7 +24,7 @@ function About() {
       <IndexNavbar />
       <ProfilePageHeader />
       <div className="section profile-content">
-        <Container>
+        <Container className="shadow preload">
           <div className="owner">
             <div className="avatar">
               <img
@@ -32,9 +35,9 @@ function About() {
             </div>
             <div className="name">
               <div className="name">
-                <h4 className="title">
+                <h1 className="title">
                   Jonathon Riley <br />
-                </h4>
+                </h1>
               </div>
               <h5 className="description">
                 An adaptable and responsible Business graduate that has recently
@@ -46,198 +49,190 @@ function About() {
               </h5>
             </div>
           </div>
+
+          <SectionCarousel />
+          {/* <Col>
+              {" "}
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <div class="text-center">
+                <div className="title">
+                  <h2>Random Facts</h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <ul class="list-group">
+                    <li class="list-inline-item">Tea Drinker</li>
+
+                    <li class="list-inline-item">
+                      {" "}
+                      I enjoy travelling the world
+                    </li>
+
+                    <li class="list-inline-item">
+                      I love playing and watching all sports
+                    </li>
+
+                    <li class="list-inline-item">
+                      I go to the gym regularly to keep myself fit
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Col> */}
+
           <div class="d-flex justify-content-center">
             <Row>
-              <Col md="25">
-                <div className="title">
-                  <h3>Software Languages and Frameworks</h3>
+              <Col>
+                <div className="container-fluid">
+                  <div className="title">
+                    <h2>Software Languages and Frameworks</h2>
+                  </div>
                   <br />
+                  <p>
+                    {" "}
+                    Javascript
+                    <Progress
+                      max="100"
+                      value="90"
+                      barClassName="progress-bar-success"
+                    />
+                  </p>
+                  <p>
+                    React
+                    <Progress
+                      max="100"
+                      value="85"
+                      barClassName="progress-bar-success"
+                    />
+                  </p>
+                  <p>
+                    {" "}
+                    HTML5
+                    <Progress
+                      max="100"
+                      value="85"
+                      barClassName="progress-bar-success"
+                    />
+                  </p>
+                  <p>
+                    {" "}
+                    CSS
+                    <Progress
+                      max="100"
+                      value="85"
+                      barClassName="progress-bar-success"
+                    />
+                  </p>
+                  <p>
+                    {" "}
+                    Bootstrap
+                    <Progress
+                      max="100"
+                      value="78"
+                      barClassName="progress-bar-success"
+                    />
+                  </p>
+                  <p>
+                    {" "}
+                    NodeJs
+                    <Progress
+                      max="100"
+                      value="78"
+                      barClassName="progress-bar-success"
+                    />
+                  </p>
+                  <p>
+                    {" "}
+                    Express.js
+                    <Progress
+                      max="100"
+                      value="70"
+                      barClassName="progress-bar-warning"
+                    />
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    PostgreSQL
+                    <Progress
+                      max="100"
+                      value="70"
+                      barClassName="progress-bar-warning"
+                    />
+                  </p>
+                  <p>
+                    {" "}
+                    Flutter
+                    <Progress
+                      max="100"
+                      value="70"
+                      barClassName="progress-bar-warning"
+                    />
+                  </p>
+                  <p>
+                    {" "}
+                    Dart
+                    <Progress
+                      max="100"
+                      value="70"
+                      barClassName="progress-bar-warning"
+                    />
+                  </p>
                 </div>
-                <p>
-                  {" "}
-                  Javascript
-                  <Progress
-                    max="100"
-                    value="90"
-                    barClassName="progress-bar-success"
-                  />
-                </p>
-                <p>
-                  React
-                  <Progress
-                    max="100"
-                    value="85"
-                    barClassName="progress-bar-success"
-                  />
-                </p>
-                <p>
-                  {" "}
-                  HTML5
-                  <Progress
-                    max="100"
-                    value="85"
-                    barClassName="progress-bar-success"
-                  />
-                </p>
-                <p>
-                  {" "}
-                  CSS
-                  <Progress
-                    max="100"
-                    value="85"
-                    barClassName="progress-bar-success"
-                  />
-                </p>
-                <p>
-                  {" "}
-                  Bootstrap
-                  <Progress
-                    max="100"
-                    value="78"
-                    barClassName="progress-bar-success"
-                  />
-                </p>
-                <p>
-                  {" "}
-                  NodeJs
-                  <Progress
-                    max="100"
-                    value="78"
-                    barClassName="progress-bar-success"
-                  />
-                </p>
-                <p>
-                  {" "}
-                  Express.js
-                  <Progress
-                    max="100"
-                    value="70"
-                    barClassName="progress-bar-warning"
-                  />
-                </p>{" "}
-                <p>
-                  {" "}
-                  PostgreSQL
-                  <Progress
-                    max="100"
-                    value="70"
-                    barClassName="progress-bar-warning"
-                  />
-                </p>
-                <p>
-                  {" "}
-                  Flutter
-                  <Progress
-                    max="100"
-                    value="70"
-                    barClassName="progress-bar-warning"
-                  />
-                </p>
-                <p>
-                  {" "}
-                  Dart
-                  <Progress
-                    max="100"
-                    value="70"
-                    barClassName="progress-bar-warning"
-                  />
-                </p>
                 <br />
               </Col>
             </Row>
           </div>
-
-          {/* <Col>
-            <div class="d-flex justify-content-center">
-              <div className="title">
-                <h3>Software Languages and Frameworks</h3>
-                <br />
-              </div>
-            </div>
-          </Col> */}
           <Container>
             <div className="section text-center">
-              {/* <div class="embed-responsive embed-responsive-16by9">
-                <iframe
-                  title="Graduation Video"
-                  class="embed-responsive-item"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/4RUl9N7pYt4"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div> */}
-
               <div className="title">
                 <h2>Projects</h2>
               </div>
               <Row>
                 <Col md="4" sm="7">
-                  <h4 className="images-title">Front-End</h4>
-                  <img
-                    alt="..."
-                    className="img-rounded img-responsive"
-                    src={require("assets/img/faces/milkroom.png")}
-                  />
-                  <div className="img-details">
-                    <div className="author">
-                      <img
-                        alt="..."
-                        className="img-circle img-no-padding img-responsive"
-                        src={require("assets/img/faces/milkroom-logo.jpg")}
-                      />
+                  <h4 className="images-title">Front-End/Back-End</h4>
+                  <NavLink to="/milkroom" tag={Link}>
+                    <img
+                      alt="..."
+                      className="img-rounded img-responsive"
+                      src={require("assets/img/faces/milkroom.png")}
+                    />{" "}
+                    <br></br> <br></br>
+                    <div className="img-details">
+                      <p>React Web App</p>
                     </div>
-                    <p>React Web App</p>
-                  </div>
+                  </NavLink>
                 </Col>
                 <Col md="4" sm="7">
-                  <h4 className="images-title">Back-End</h4>
-                  <img
-                    alt="..."
-                    className="img-rounded img-responsive"
-                    src={require("assets/img/faces/Express.jpeg")}
-                  />
-                  <div className="img-details">
-                    <div className="author">
-                      <img
-                        alt="..."
-                        className="img-circle img-no-padding img-responsive"
-                        src={require("assets/img/faces/milkroom-logo.jpg")}
-                      />
+                  <h4 className="images-title">Front-End/Back-End</h4>
+                  <NavLink to="/northcoders" tag={Link}>
+                    <img
+                      alt="..."
+                      className="img-rounded img-responsive"
+                      src={require("assets/ncNews-thumbnail.png")}
+                    />
+                    <br></br> <br></br>
+                    <div className="img-details">
+                      <p>React Web App</p>
                     </div>
-                    <p>RESTful API</p>
-                  </div>
+                  </NavLink>
                 </Col>{" "}
                 <Col md="4" sm="7">
-                  <h4 className="images-title">Rounded Image</h4>
-                  <img
-                    alt="..."
-                    className="img-rounded img-responsive"
-                    src={require("assets/img/faces/milkroom.png")}
-                  />
-                  <div className="img-details">
-                    <div className="author">
-                      <img
-                        alt="..."
-                        className="img-circle img-no-padding img-responsive"
-                        src={require("assets/img/faces/milkroom-logo.jpg")}
-                      />
+                  <h4 className="images-title">Front-end</h4>
+                  <NavLink to="/reCharge" tag={Link}>
+                    {" "}
+                    <img
+                      alt="..."
+                      className="img-rounded img-responsive"
+                      src={require("assets/reChargeThumbnail.png")}
+                    />
+                    <br></br> <br></br>
+                    <div className="img-details">
+                      <p>Flutter App</p>
                     </div>
-                    <p>The milkroom Web App</p>
-                  </div>
-                </Col>
-                <Col>
-                  <div className="img-details">
-                    <Button
-                      className="btn-round ml-1"
-                      color="info"
-                      type="button"
-                    >
-                      MORE PROJECTS
-                    </Button>
-                  </div>
+                  </NavLink>
                 </Col>
               </Row>
             </div>

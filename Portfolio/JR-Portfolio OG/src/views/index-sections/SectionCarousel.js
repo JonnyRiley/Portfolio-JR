@@ -27,34 +27,34 @@ import {
   Carousel,
   CarouselItem,
   CarouselIndicators,
-  CarouselCaption
+  CarouselCaption,
 } from "reactstrap";
 
 // core components
 
 const items = [
   {
-    src: require("assets/img/soroush-karimi.jpg"),
-    altText: "Somewhere",
-    caption: "Somewhere"
+    src: require("assets/travel.png"),
+    altText: "Time Square",
+    caption: "Time Square, New York",
   },
   {
-    src: require("assets/img/federico-beccari.jpg"),
-    altText: "Somewhere else",
-    caption: "Somewhere else"
+    src: require("assets/travel2.png"),
+    altText: "Morzine, France",
+    caption: "Morzine, France",
   },
   {
-    src: require("assets/img/joshua-stannard.jpg"),
-    altText: "Here it is",
-    caption: "Here it is"
-  }
+    src: require("assets/travel3.png"),
+    altText: "Colosseum, Rome",
+    caption: "Colosseum, Rome",
+  },
 ];
 
 function SectionCarousel() {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
   const onExiting = () => {
-    setAnimating(true);
+    setAnimating(false);
   };
   const onExited = () => {
     setAnimating(false);
@@ -69,7 +69,7 @@ function SectionCarousel() {
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
-  const goToIndex = newIndex => {
+  const goToIndex = (newIndex) => {
     if (animating) return;
     setActiveIndex(newIndex);
   };
@@ -78,7 +78,7 @@ function SectionCarousel() {
       <div className="section pt-o" id="carousel">
         <Container>
           <Row>
-            <Col className="ml-auto mr-auto" md="8">
+            <Col className="ml-auto mr-auto" md="5">
               <Card className="page-carousel">
                 <Carousel
                   activeIndex={activeIndex}
@@ -90,7 +90,7 @@ function SectionCarousel() {
                     activeIndex={activeIndex}
                     onClickHandler={goToIndex}
                   />
-                  {items.map(item => {
+                  {items.map((item) => {
                     return (
                       <CarouselItem
                         onExiting={onExiting}
@@ -109,7 +109,7 @@ function SectionCarousel() {
                     className="left carousel-control carousel-control-prev"
                     data-slide="prev"
                     href="#pablo"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       previous();
                     }}
@@ -122,7 +122,7 @@ function SectionCarousel() {
                     className="right carousel-control carousel-control-next"
                     data-slide="next"
                     href="#pablo"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       next();
                     }}
@@ -133,6 +133,37 @@ function SectionCarousel() {
                   </a>
                 </Carousel>
               </Card>
+            </Col>
+            <Col>
+              {" "}
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <div class="text-center">
+                <div className="title">
+                  <h2>Random Facts</h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <ul class="list-group">
+                    <li class="list-inline-item">Tea Drinker</li>
+
+                    <li class="list-inline-item">
+                      {" "}
+                      I enjoy travelling the world
+                    </li>
+
+                    <li class="list-inline-item">
+                      I love playing and watching all sports
+                    </li>
+
+                    <li class="list-inline-item">
+                      I go to the gym regularly to keep myself fit
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>

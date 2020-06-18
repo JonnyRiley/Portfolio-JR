@@ -38,7 +38,7 @@ function Projects() {
               <h4 className="title">
                 Jonathon Riley <br />
               </h4>
-              <p className="description">
+              <h5 className="col">
                 In addition to Coding, I studied International Business
                 throughout my time at College and University. This enabled me to
                 develop a wide variety of skills and knowledge of the business
@@ -47,7 +47,7 @@ function Projects() {
                 experience drove my desire to initiate my entrepreneurial self.
                 I partnered with a local brand Vermillion to distribute Hats
                 across the North West, UK.
-              </p>
+              </h5>
             </div>
           </div>
           {/* <Row>
@@ -78,15 +78,9 @@ function Projects() {
                       alt="..."
                       className="img-rounded img-responsive"
                       src={require("assets/img/faces/milkroom.png")}
-                    />
+                    />{" "}
+                    <br></br> <br></br>
                     <div className="img-details">
-                      <div className="author">
-                        <img
-                          alt="..."
-                          className="img-circle img-no-padding img-responsive"
-                          src={require("assets/img/faces/milkroom-logo.jpg")}
-                        />
-                      </div>
                       <p>React Web App</p>
                     </div>
                   </NavLink>
@@ -97,17 +91,10 @@ function Projects() {
                     <img
                       alt="..."
                       className="img-rounded img-responsive"
-                      src={require("assets/img/faces/Express.jpeg")}
+                      src={require("assets/ncNews-thumbnail.png")}
                     />
+                    <br></br> <br></br>
                     <div className="img-details">
-                      <div className="author">
-                        {" "}
-                        <img
-                          alt="..."
-                          className="img-circle img-no-padding img-responsive"
-                          src={require("assets/img/faces/milkroom-logo.jpg")}
-                        />{" "}
-                      </div>
                       <p>React Web App</p>
                     </div>
                   </NavLink>
@@ -121,15 +108,8 @@ function Projects() {
                       className="img-rounded img-responsive"
                       src={require("assets/reChargeThumbnail.png")}
                     />
+                    <br></br> <br></br>
                     <div className="img-details">
-                      <div className="author">
-                        {" "}
-                        <img
-                          alt="..."
-                          className="img-circle img-no-padding img-responsive"
-                          src={require("assets/img/faces/milkroom-logo.jpg")}
-                        />
-                      </div>
                       <p>Flutter App</p>
                     </div>
                   </NavLink>
@@ -142,7 +122,7 @@ function Projects() {
               <Row>
                 <Col className="mr-auto" md="4" sm="5">
                   <h4 className="images-title">Vermilllion</h4>
-                  <NavLink to="/index" tag={Link}>
+                  <NavLink to="/vermillion" tag={Link}>
                     {" "}
                     <img
                       alt="..."
@@ -153,7 +133,7 @@ function Projects() {
                   <p className="text-center"></p>
                 </Col>
                 <Col className="mr-auto" md="4" sm="5">
-                  <h4 className="images-title">The milkroom</h4>
+                  <h4 className="images-title">themilkroom</h4>
                   <NavLink to="/index" tag={Link}>
                     {" "}
                     <img

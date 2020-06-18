@@ -20,10 +20,10 @@ import React from "react";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 import { Link } from "react-router-dom";
+import logo from "../../assets/jr-logo.png";
 // reactstrap components
 import {
   Collapse,
-  NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
@@ -69,15 +69,7 @@ function IndexNavbar() {
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand
-            data-placement="bottom"
-            href="/landing-page"
-            target="_blank"
-            title="Coded by Creative Tim"
-          >
-            Portfolio
-          </NavbarBrand>
-
+          <img class="w-50 p-3" src={logo} alt="logo"></img>
           <button
             aria-expanded={navbarCollapse}
             className={classnames("navbar-toggler navbar-toggler", {
@@ -97,42 +89,6 @@ function IndexNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle
-                aria-expanded={false}
-                aria-haspopup={true}
-                caret
-                color="default"
-                data-toggle="dropdown"
-                href="#pablo"
-                id="dropdownMenuButton"
-                nav
-                onClick={(e) => e.preventDefault()}
-                role="button"
-              >
-                <i class="nc-icon nc-align-center" />
-              </DropdownToggle>
-              <DropdownMenu
-                aria-labelledby="dropdownMenuButton"
-                className="dropdown-info"
-              >
-                <DropdownItem
-                  href="#profile-page"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <Link to="/landing-page">Home</Link>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <Link to="/about">About</Link>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <Link to="/projects">Projects</Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-
             <NavItem>
               <NavLink
                 data-placement="bottom"
@@ -177,6 +133,41 @@ function IndexNavbar() {
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
             </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle
+                aria-expanded={false}
+                aria-haspopup={true}
+                caret
+                color="default"
+                data-toggle="dropdown"
+                href="#pablo"
+                id="dropdownMenuButton"
+                nav
+                onClick={(e) => e.preventDefault()}
+                role="button"
+              >
+                <i class="nc-icon nc-align-center" />
+              </DropdownToggle>
+              <DropdownMenu
+                aria-labelledby="dropdownMenuButton"
+                className="dropdown-info"
+              >
+                <DropdownItem
+                  href="#profile-page"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <Link to="/landing-page">Home</Link>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <Link to="/about">About</Link>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <Link to="/projects">Projects</Link>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </Nav>
         </Collapse>
       </Container>

@@ -20,7 +20,7 @@
 import React from "react";
 
 // reactstrap components
-import { Row, Container } from "reactstrap";
+import { Row, Container, NavLink, NavItem, Navbar } from "reactstrap";
 
 function DemoFooter() {
   return (
@@ -55,12 +55,6 @@ function DemoFooter() {
               </li>
             </ul>
           </nav>
-          <div className="credits ml-auto">
-            <span className="copyright">
-              © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
-            </span>
-          </div>
         </Row>
       </Container>
     </footer>
