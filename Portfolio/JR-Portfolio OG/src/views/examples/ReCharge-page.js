@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Col, Row } from "reactstrap";
-// import desktop from "../../assets/desktop1.png";
 import reCharge from "../../assets/reChargeApp.png";
 import reCharge2 from "../../assets/reChargeApp2.png";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -65,9 +64,6 @@ function ReChargePage() {
                     ></iframe>
                   </div>
                   <br></br>
-                  {/* </Col>
-
-                <Col className="ml-auto mr-auto text-center"> */}
 
                   <h4 className="description">
                     This project was based around horizon scanning and thinking
@@ -101,7 +97,6 @@ function ReChargePage() {
                       <Col className="mr-auto" md="4" sm="4">
                         <img
                           alt="..."
-                          // className="img-thumbnail img-responsive"
                           class="w-100 p-3"
                           src={require("assets/flutter-logo.png")}
                         />{" "}
@@ -110,19 +105,10 @@ function ReChargePage() {
                         {" "}
                         <img
                           alt="..."
-                          // className="img-thumbnail img-responsive"
                           class="w-100 p-3"
                           src={require("assets/dart-logo.png")}
                         />
                       </Col>
-                      {/* <Col className="mr-auto" md="3" sm="3">
-                        <img
-                          alt="..."
-                          class="w-75 p-3"
-                          // className="img-thumbnail img-responsive"
-                          src={require("assets/CSS3.png")}
-                        />
-                      </Col> */}
                     </Row>
                   </Container>
                 </Col>
@@ -130,41 +116,6 @@ function ReChargePage() {
             </section>
           </Row>
         </Container>
-
-        {/* <br></br>
-        <br></br>
-        <Container>
-          <Row className="ml-auto mr-auto text-center">
-            <Col>
-              {" "}
-              <img
-                class="shadow preload"
-                src={desktop}
-                alt="milkroom webApp"
-              ></img>
-            </Col>
-          </Row>
-        </Container> */}
-        {/* <Container>
-          <Row className="ml-auto mr-auto text-center">
-            <Col>
-              {" "}
-              <img src={video} alt="milkroom webApp"></img>
-            </Col>
-            <Col>
-              {" "}
-              <h4 className="description">
-                {" "}
-                <br></br>
-                <br></br>
-                My focus points for the web app centred on it being; user
-                centric, visually engaging and easy to navigate. Importantly, I
-                monitor the application analytics to assess trends and popular
-                pages to ensure that my focus points are maintained over time.
-              </h4>
-            </Col>
-          </Row>
-        </Container> */}
       </div>
       <DemoFooter />
     </>

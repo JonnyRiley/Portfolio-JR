@@ -1,9 +1,7 @@
 import React from "react";
 
-// reactstrap components
 import { Progress, Container, Row, Col } from "reactstrap";
 
-// core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
@@ -51,37 +49,6 @@ function About() {
           </div>
 
           <SectionCarousel />
-          {/* <Col>
-              {" "}
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <div class="text-center">
-                <div className="title">
-                  <h2>Random Facts</h2>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <ul class="list-group">
-                    <li class="list-inline-item">Tea Drinker</li>
-
-                    <li class="list-inline-item">
-                      {" "}
-                      I enjoy travelling the world
-                    </li>
-
-                    <li class="list-inline-item">
-                      I love playing and watching all sports
-                    </li>
-
-                    <li class="list-inline-item">
-                      I go to the gym regularly to keep myself fit
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </Col> */}
 
           <div class="d-flex justify-content-center">
             <Row>
@@ -237,119 +204,6 @@ function About() {
               </Row>
             </div>
           </Container>
-          {/* <Row>
-            <Col className="ml-auto mr-auto text-center" md="6">
-              <p>
-                An artist of considerable range, Jane Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.
-              </p>
-              <br />
-              <Button className="btn-round" color="default" outline>
-                <i className="fa fa-cog" /> Settings
-              </Button>
-            </Col>
-          </Row>
-          <br /> */}
-          {/* <div className="nav-tabs-navigation">
-            <div className="nav-tabs-wrapper">
-              <Nav role="tablist" tabs>
-                <NavItem>
-                  <NavLink
-                    className={activeTab === "1" ? "active" : ""}
-                    onClick={() => {
-                      toggle("1");
-                    }}
-                  >
-                    Follows
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    className={activeTab === "2" ? "active" : ""}
-                    onClick={() => {
-                      toggle("2");
-                    }}
-                  >
-                    Following
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </div>
-          </div>
-          Tab panes */}
-          {/* <TabContent className="following" activeTab={activeTab}>
-            <TabPane tabId="1" id="follows">
-              <Row>
-                <Col className="ml-auto mr-auto" md="6">
-                  <ul className="list-unstyled follows">
-                    <li>
-                      <Row>
-                        <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
-                          <img
-                            alt="..."
-                            className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/NC-Photo copy.PNG")}
-                          />
-                        </Col>
-                        <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
-                          <h6>
-                            Flume <br />
-                            <small>Musical Producer</small>
-                          </h6>
-                        </Col>
-                        <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
-                          <FormGroup check>
-                            <Label check>
-                              <Input
-                                defaultChecked
-                                defaultValue=""
-                                type="checkbox"
-                              />
-                              <span className="form-check-sign" />
-                            </Label>
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                    </li>
-                    <hr />
-                    <li>
-                      <Row>
-                        <Col className="mx-auto" lg="2" md="4" xs="4">
-                          <img
-                            alt="..."
-                            className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/NC-Photo copy.PNG")}
-                          />
-                        </Col>
-                        <Col lg="7" md="4" xs="4">
-                          <h6>
-                            Banks <br />
-                            <small>Singer</small>
-                          </h6>
-                        </Col>
-                        <Col lg="3" md="4" xs="4">
-                          <FormGroup check>
-                            <Label check>
-                              <Input defaultValue="" type="checkbox" />
-                              <span className="form-check-sign" />
-                            </Label>
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                    </li>
-                  </ul>
-                </Col>
-              </Row>
-            </TabPane>
-            <TabPane className="text-center" tabId="2" id="following">
-              <h3 className="text-muted">Not following anyone yet :(</h3>
-              <Button className="btn-round" color="warning">
-                Find artists
-              </Button>
-            </TabPane>
-          </TabContent> */}
         </Container>
       </div>
       <DemoFooter />

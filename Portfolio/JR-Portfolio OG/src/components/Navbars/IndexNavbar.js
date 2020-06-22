@@ -17,11 +17,9 @@
 
 */
 import React from "react";
-// nodejs library that concatenates strings
 import classnames from "classnames";
 import { Link } from "react-router-dom";
 import logo from "../../assets/jr-logo.png";
-// reactstrap components
 import {
   Collapse,
   Navbar,

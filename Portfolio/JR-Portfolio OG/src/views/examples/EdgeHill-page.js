@@ -1,12 +1,10 @@
 import React from "react";
 import { Container, Col, Row } from "reactstrap";
-// import desktop from "../../assets/desktop1.png";
 import ChinaMain from "../../assets/Uni-Assets/uni2.png";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
-import { Link } from "react-router-dom";
 function EdgeHillPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -66,7 +64,6 @@ function EdgeHillPage() {
                       <Col className="mr-auto" md="4" sm="4">
                         <img
                           alt="..."
-                          // className="img-thumbnail img-responsive"
                           className="img-rounded img-responsive"
                           src={require("assets/Uni-Assets/uni3.png")}
                         />{" "}
@@ -75,7 +72,6 @@ function EdgeHillPage() {
                         {" "}
                         <img
                           alt="..."
-                          // className="img-thumbnail img-responsive"
                           className="img-rounded img-responsive"
                           src={require("assets/Uni-Assets/uni.png")}
                         />
@@ -84,7 +80,6 @@ function EdgeHillPage() {
                         <img
                           alt="..."
                           className="img-rounded img-responsive"
-                          // className="img-thumbnail img-responsive"
                           src={require("assets/Uni-Assets/uni1.png")}
                         />
                         <br></br>
@@ -100,41 +95,6 @@ function EdgeHillPage() {
             </section>
           </Row>
         </Container>
-
-        {/* <br></br>
-        <br></br>
-        <Container>
-          <Row className="ml-auto mr-auto text-center">
-            <Col>
-              {" "}
-              <img
-                class="shadow preload"
-                src={desktop}
-                alt="milkroom webApp"
-              ></img>
-            </Col>
-          </Row>
-        </Container> */}
-        {/* <Container>
-          <Row className="ml-auto mr-auto text-center">
-            <Col>
-              {" "}
-              <img src={video} alt="milkroom webApp"></img>
-            </Col>
-            <Col>
-              {" "}
-              <h4 className="description">
-                {" "}
-                <br></br>
-                <br></br>
-                My focus points for the web app centred on it being; user
-                centric, visually engaging and easy to navigate. Importantly, I
-                monitor the application analytics to assess trends and popular
-                pages to ensure that my focus points are maintained over time.
-              </h4>
-            </Col>
-          </Row>
-        </Container> */}
       </div>
       <DemoFooter />
     </>

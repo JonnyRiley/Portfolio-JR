@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row } from "reactstrap";
+import { Container, Col, Row, NavLink } from "reactstrap";
 import desktop from "../../assets/desktop1.png";
 import freakshake from "../../assets/milkroom.png";
 import video from "../../assets/mock3.gif";
@@ -31,16 +31,23 @@ function MilkroomPage() {
                     </h1>
                     <Row>
                       {" "}
-                      <img
-                        class="w-50 p-3"
-                        src={freakshake}
-                        alt="milkroom webApp"
-                      ></img>
-                      <img
-                        class="w-50 p-3"
-                        src={desktop}
-                        alt="milkroom webApp"
-                      ></img>
+                      <NavLink
+                        data-placement="bottom"
+                        href="https://www.themilkroom.com"
+                        target="_blank"
+                        title="themilkroom web-app"
+                      >
+                        <img
+                          class="w-50 p-3"
+                          src={freakshake}
+                          alt="milkroom webApp"
+                        ></img>
+                        <img
+                          class="w-50 p-3"
+                          src={desktop}
+                          alt="milkroom webApp"
+                        ></img>{" "}
+                      </NavLink>
                     </Row>
                     <h4 className="description">
                       {" "}
@@ -51,12 +58,14 @@ function MilkroomPage() {
                       are maintained over time.
                     </h4>
                   </div>
-                  {/* </Col>
-
-                <Col className="ml-auto mr-auto text-center"> */}
-
-                  <img src={video} alt="milkroom webApp"></img>
-                  {/* <img src={freakshake} alt="milkroom webApp"></img> */}
+                  <NavLink
+                    data-placement="bottom"
+                    href="https://www.themilkroom.com"
+                    target="_blank"
+                    title="themilkroom web-app"
+                  >
+                    <img src={video} alt="milkroom webApp"></img>
+                  </NavLink>
                   <h4 className="description">
                     I volunteer at this local start-up business to provide
                     technical solutions to improve efficiency with daily and
@@ -78,7 +87,6 @@ function MilkroomPage() {
                       <Col className="mr-auto" md="4" sm="5">
                         <img
                           alt="..."
-                          // className="img-thumbnail img-responsive"
                           class="w-100 p-3"
                           src={require("assets/react.png")}
                         />{" "}
@@ -87,7 +95,6 @@ function MilkroomPage() {
                         {" "}
                         <img
                           alt="..."
-                          // className="img-thumbnail img-responsive"
                           class="w-100 p-3"
                           src={require("assets/html5.png")}
                         />
@@ -96,7 +103,6 @@ function MilkroomPage() {
                         <img
                           alt="..."
                           class="w-75 p-3"
-                          // className="img-thumbnail img-responsive"
                           src={require("assets/CSS3.png")}
                         />
                       </Col>
@@ -107,41 +113,6 @@ function MilkroomPage() {
             </section>
           </Row>
         </Container>
-
-        {/* <br></br>
-        <br></br>
-        <Container>
-          <Row className="ml-auto mr-auto text-center">
-            <Col>
-              {" "}
-              <img
-                class="shadow preload"
-                src={desktop}
-                alt="milkroom webApp"
-              ></img>
-            </Col>
-          </Row>
-        </Container> */}
-        {/* <Container>
-          <Row className="ml-auto mr-auto text-center">
-            <Col>
-              {" "}
-              <img src={video} alt="milkroom webApp"></img>
-            </Col>
-            <Col>
-              {" "}
-              <h4 className="description">
-                {" "}
-                <br></br>
-                <br></br>
-                My focus points for the web app centred on it being; user
-                centric, visually engaging and easy to navigate. Importantly, I
-                monitor the application analytics to assess trends and popular
-                pages to ensure that my focus points are maintained over time.
-              </h4>
-            </Col>
-          </Row>
-        </Container> */}
       </div>
       <DemoFooter />
     </>

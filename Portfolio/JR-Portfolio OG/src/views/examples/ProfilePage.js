@@ -18,7 +18,6 @@
 */
 import React from "react";
 
-// reactstrap components
 import {
   Button,
   Label,
@@ -34,7 +33,6 @@ import {
   Col,
 } from "reactstrap";
 
-// core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
@@ -117,7 +115,6 @@ function ProfilePage() {
               </Nav>
             </div>
           </div>
-          {/* Tab panes */}
           <TabContent className="following" activeTab={activeTab}>
             <TabPane tabId="1" id="follows">
               <Row>

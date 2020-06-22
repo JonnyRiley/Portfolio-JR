@@ -1,12 +1,10 @@
 import React from "react";
 import { Container, Col, Row, NavLink } from "reactstrap";
-// import desktop from "../../assets/desktop1.png";
 import vermillion from "../../assets/vermillion.png";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
-import { Link } from "react-router-dom";
 function VermillionPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -35,7 +33,7 @@ function VermillionPage() {
                         <img
                           class="w-75 p-3"
                           src={vermillion}
-                          alt="milkroom webApp"
+                          alt="vermillion"
                         ></img>
                       </div>
                     </Row>
@@ -52,38 +50,12 @@ function VermillionPage() {
                   </div>
                   <br></br>
                   <br></br>
-                  {/* </Col>
-
-                <Col className="ml-auto mr-auto text-center"> */}
-
-                  {/* <h4 className="description">
-                    This project was based around horizon scanning and thinking
-                    about technological tools that can support efforts in
-                    creating a sustainable future. My project was focused on how
-                    the car industry is going to change by the year 2030. I
-                    wanted to create a mobile application that was accessible to
-                    all users by giving the user the ability to navigate and
-                    plan their journey by highlighting the use of electric car
-                    charging points, along with suggesting nearby locations to
-                    visit whilst at each point of interest. The goal was to
-                    self-teach the UI software development kit Flutter and the
-                    client-optimizing language Dart that is native to Flutter.
-                    In order to retrieve the data multiple Google API’s where
-                    used in correlation with the OpenCharge Map API. The
-                    back-end was built using Ruby on Rails and PostgreSQL. This
-                    was set to challenge and test my ability to learn a new tech
-                    stack under-pressure and build an App within the time
-                    constraint of two weeks. I am proud that this project was
-                    completed and presented on time and can be viewed upon
-                    request.
-                  </h4> */}
                   <br></br>
                   <Container>
                     <Row>
                       <Col className="mr-auto" md="4" sm="4">
                         <img
                           alt="..."
-                          // className="img-thumbnail img-responsive"
                           className="img-rounded img-responsive"
                           src={require("assets/card-holder.png")}
                         />{" "}
@@ -92,7 +64,6 @@ function VermillionPage() {
                         {" "}
                         <img
                           alt="..."
-                          // className="img-thumbnail img-responsive"
                           className="img-rounded img-responsive"
                           src={require("assets/venice.png")}
                         />
@@ -101,7 +72,6 @@ function VermillionPage() {
                         <img
                           alt="..."
                           className="img-rounded img-responsive"
-                          // className="img-thumbnail img-responsive"
                           src={require("assets/t-shirt.png")}
                         />
                         <br></br>

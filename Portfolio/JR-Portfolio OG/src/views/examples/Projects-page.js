@@ -1,9 +1,7 @@
 import React from "react";
 
-// reactstrap components
 import { Container, Row, Col } from "reactstrap";
 
-// core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
@@ -11,8 +9,6 @@ import { NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
 
 function Projects() {
-  // const [activeTab, setActiveTab] = React.useState("1");
-
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -50,20 +46,6 @@ function Projects() {
               </h5>
             </div>
           </div>
-          {/* <Row>
-            <Col className="ml-auto mr-auto text-center" md="6">
-              <p>
-                An artist of considerable range, Jane Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.
-              </p>
-              <br />
-              <Button className="btn-round" color="default" outline>
-                <i className="fa fa-cog" /> Settings
-              </Button>
-            </Col>
-          </Row> */}
           <Row>
             <div className="section text-center">
               <div className="title">
