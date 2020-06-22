@@ -130,41 +130,6 @@ function VermillionPage() {
             </section>
           </Row>
         </Container>
-
-        {/* <br></br>
-        <br></br>
-        <Container>
-          <Row className="ml-auto mr-auto text-center">
-            <Col>
-              {" "}
-              <img
-                class="shadow preload"
-                src={desktop}
-                alt="milkroom webApp"
-              ></img>
-            </Col>
-          </Row>
-        </Container> */}
-        {/* <Container>
-          <Row className="ml-auto mr-auto text-center">
-            <Col>
-              {" "}
-              <img src={video} alt="milkroom webApp"></img>
-            </Col>
-            <Col>
-              {" "}
-              <h4 className="description">
-                {" "}
-                <br></br>
-                <br></br>
-                My focus points for the web app centred on it being; user
-                centric, visually engaging and easy to navigate. Importantly, I
-                monitor the application analytics to assess trends and popular
-                pages to ensure that my focus points are maintained over time.
-              </h4>
-            </Col>
-          </Row>
-        </Container> */}
       </div>
       <DemoFooter />
     </>

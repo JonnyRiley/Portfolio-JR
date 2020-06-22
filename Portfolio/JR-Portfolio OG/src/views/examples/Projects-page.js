@@ -133,20 +133,20 @@ function Projects() {
                   <p className="text-center"></p>
                 </Col>
                 <Col className="mr-auto" md="4" sm="5">
-                  <h4 className="images-title">themilkroom</h4>
-                  <NavLink to="/index" tag={Link}>
+                  <h4 className="images-title">China</h4>
+                  <NavLink to="/china" tag={Link}>
                     {" "}
                     <img
                       alt="..."
                       className="img-thumbnail img-responsive"
-                      src={require("assets/img/faces/Smoothie.jpg")}
+                      src={require("assets/China-Assets/china3.png")}
                     />
                   </NavLink>
                   <p className="text-center"></p>
                 </Col>
                 <Col className="mr-auto" md="4" sm="5">
                   <h4 className="images-title">Edge Hill University</h4>
-                  <NavLink to="/index" tag={Link}>
+                  <NavLink to="/university" tag={Link}>
                     {" "}
                     <img
                       alt="..."

@@ -73,14 +73,17 @@ function ReChargePage() {
                     This project was based around horizon scanning and thinking
                     about technological tools that can support efforts in
                     creating a sustainable future. My project was focused on how
-                    the car industry is going to change by the year 2030. I
-                    wanted to create a mobile application that was accessible to
-                    all users by giving the user the ability to navigate and
-                    plan their journey by highlighting the use of electric car
-                    charging points, along with suggesting nearby locations to
-                    visit whilst at each point of interest. The goal was to
-                    self-teach the UI software development kit Flutter and the
-                    client-optimizing language Dart that is native to Flutter.
+                    the car industry is going to change by the year 2030.{" "}
+                    <br></br>
+                    <br></br>I wanted to create a mobile application that was
+                    accessible to all users by giving the user the ability to
+                    navigate and plan their journey by highlighting the use of
+                    electric car charging points, along with suggesting nearby
+                    locations to visit whilst at each point of interest. The
+                    goal was to self-teach the UI software development kit
+                    Flutter and the client-optimizing language Dart that is
+                    native to Flutter.<br></br>
+                    <br></br>
                     In order to retrieve the data multiple Google API’s where
                     used in correlation with the OpenCharge Map API. The
                     back-end was built using Ruby on Rails and PostgreSQL. This

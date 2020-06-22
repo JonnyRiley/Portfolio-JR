@@ -33,6 +33,9 @@ import MilkroomPage from "./views/examples/MilkroomPage.js";
 import NorthcodersPage from "./views/examples/Northcoders-page.js";
 import ReChargePage from "./views/examples/ReCharge-page.js";
 import VermillionPage from "./views/examples/Vermillion-page.js";
+import ChinaPage from "./views/examples/China-page.js";
+import EdgeHillPage from "./views/examples/EdgeHill-page.js";
+
 // others
 import About from "views/examples/About-page.js";
 
@@ -58,6 +61,12 @@ ReactDOM.render(
         path="/vermillion"
         render={(props) => <VermillionPage {...props} />}
       />
+      <Route path="/china" render={(props) => <ChinaPage {...props} />} />
+      <Route
+        path="/university"
+        render={(props) => <EdgeHillPage {...props} />}
+      />
+
       <Route path="/projects" render={(props) => <Projects {...props} />} />
       <Route path="/about" render={(props) => <About {...props} />} />
       <Redirect to="/landing-page" />
